@@ -11,6 +11,7 @@ public class ChromeBaseTest {
 //	@Test(priority = 1)
 	public static void initializeChromebrowser() {
 		driver= new ChromeDriver();
+		System.out.println("hello world");
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 		driver.manage().window().maximize();
 	}
