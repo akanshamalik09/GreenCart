@@ -1,10 +1,10 @@
-package Pages;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+package Pages;                                                                                                           
+import org.openqa.selenium.By;                                                                                                     
+import org.openqa.selenium.WebDriver;                                  
 
 public class GreencartCheckoutpage {
 	
-	WebDriver driver;
+	WebDriver driver;                                                
 	
 	public GreencartCheckoutpage(WebDriver drv) {
 		this.driver=drv;
@@ -24,6 +24,10 @@ public class GreencartCheckoutpage {
 	public void clear() {
     driver.findElement(By.cssSelector("input.promoCode")).clear();
  
+	}
+	
+	public void placeOrder() {
+	driver.findElement(By.xpath("//button[text()='Place Order']")).click();
 	}
 }
 

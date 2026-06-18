@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import Base.ChromeBaseTest;
 import Pages.GreencartCheckoutpage;
+import Pages.GreencartCountryPage;
 //import Pages.GreenCartTopDeals;
 import Pages.GreencartHome;
 
@@ -63,18 +64,26 @@ public class GreencartTest extends ChromeBaseTest {
        //Click Apply Button
          greenchkoutpge.clickapplybtn();
          
+        //Click on promocode
+       greenchkoutpge.placeOrder();
+       
+       GreencartCountryPage  greencounpage=new GreencartCountryPage();
+       
+       greencounpage.selectcountryName("India");
+       
+       //click on checkbox
+       greencounpage.clickTermsCheckbox();
+       
+       //click on Proceed button
+       greencounpage.clickProceedButton();
+
+       
+       
+       
+       
 	 } 
 	 
 	
-	 
-	 
-		 
-      // GreenCartTopDeals greenctopdeals= new GreenCartTopDeals(driver);
-		 //greencthm.checkTopDealsLink();
-		// greenctopdeals.selectpagesize();
-        // greencthm.checkFlightBooking();
-		 
-		 
 
 	 }
 	 
